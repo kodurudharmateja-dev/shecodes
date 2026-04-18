@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THIS CAN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="menu" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="title">THIS CAN</div>
+
+  <div class="profile" onclick="toggleProfile()">
+    <i class="fas fa-user"></i>
+    <div class="dropdown" id="profileDropdown">
+      <p><strong>Username</strong></p>
+      <p>email@example.com</p>
+      <p>+91 9876543210</p>
+      <button>Logout</button>
+    </div>
+  </div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li>Saved</li>
+    <li>Likes</li>
+    <li>Wishlist</li>
+    <li>Reviews</li>
+    <li>Orders</li>
+    <li>Search History</li>
+  </ul>
+</div>
+
+<div class="search-container">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Paste product link or search...">
+    <i class="fas fa-microphone"></i>
+    <i class="fas fa-camera"></i>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
